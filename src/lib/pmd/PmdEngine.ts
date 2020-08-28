@@ -126,7 +126,6 @@ export class PmdEngine implements RuleEngine {
 		return violations;
 	}
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	protected xmlToRuleResults(elements: any): RuleResult[] {
 		// Provide results for nodes that are files.
 		const files = elements.filter(e => 'file' === e.name);
